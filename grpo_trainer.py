@@ -196,7 +196,7 @@ class GRPOTrainer:
             Tensor of rewards [batch_size]
         """
         # ============================================================
-        # TODO: Implement reward computation
+        # Implement reward computation
         # ============================================================
         # 
         # For GSM8K, you might want to:
@@ -268,6 +268,7 @@ class GRPOTrainer:
                         temperature=temperature,
                         do_sample=True,
                         pad_token_id=self.tokenizer.eos_token_id,
+                        use_cache=True,
                     )
                     
                     generated = self.tokenizer.decode(

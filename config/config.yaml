@@ -1,10 +1,10 @@
 # @package _global_
 
 defaults:
-  - model: Qwen/Qwen1.7B
+  - model: default
   - training: default
   - grpo: default
-  - wandb: default
+  - wandb: enabled
 
 # Output directory
 output_dir: ./outputs
