@@ -1,0 +1,18 @@
+# @package grpo
+
+# Group settings
+group_size: 4  # Size of groups for relative comparisons
+num_samples_per_prompt: 1  # Number of responses to generate per prompt
+temperature: 1.0  # Sampling temperature
+
+# KL penalty (if using reference model)
+kl_coeff: 0.1  # Coefficient for KL divergence penalty
+use_kl_penalty: false  # Whether to use KL penalty
+
+# Generation settings
+max_new_tokens: 256
+do_sample: true
+
+# Reward settings
+reward_type: exact_match  # "exact_match", "numerical", "step_by_step"
+

@@ -1,0 +1,29 @@
+# @package _global_
+
+defaults:
+  - model: Qwen/Qwen1.7B
+  - training: default
+  - grpo: default
+  - wandb: default
+
+# Output directory
+output_dir: ./outputs
+
+# Device (auto-detected if not specified)
+device: null  # null means auto-detect
+
+# Dataset settings
+dataset:
+  name: gsm8k
+  split_train: train
+  split_test: test
+  max_eval_samples: 100
+  max_reward_eval_samples: 100
+  max_final_reward_samples: 500
+
+# Evaluation settings
+eval:
+  eval_steps: 100
+  save_steps: 500
+  max_new_tokens: 256
+

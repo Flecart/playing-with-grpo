@@ -1,0 +1,7 @@
+# @package wandb
+
+use_wandb: false
+project: grpo-gsm8k
+run_name: null  # null means auto-generated
+entity: null  # null means use default entity
+
